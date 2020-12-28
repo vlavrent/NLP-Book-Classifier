@@ -16,5 +16,5 @@ nlp = spacy.load('el_core_news_sm')
 data['Περιεχόμενα'] = data['Περιεχόμενα'].apply(lambda x: ' '.join([w.lemma_ for w in nlp(x)]))
 
 #-----------Save Lemmatized dataset to a CSV file on google drive-----------------------
-data.to_csv("Lemma.csv",index=False)
+data.to_csv("Processed-Books-Lemma.csv",index=False)
 !cp Lemma.csv "drive/My Drive/"
