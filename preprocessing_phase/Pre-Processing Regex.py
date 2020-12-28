@@ -17,7 +17,7 @@ books['Περιεχόμενα'] = books['Περιεχόμενα'].str.replace('\
 books['Περιεχόμενα'] = books['Περιεχόμενα'].str.findall('\w{4,}').str.join(' ')
 books['Περιεχόμενα'] = books['Περιεχόμενα'].str.replace('\w[A-Za-z]+', '')
 
-#-------------------Lowercasing-------------------------------------
+#-------------------Lowercasing--------------------------------------
 books["Περιεχόμενα"] = books["Περιεχόμενα"].apply(lambda x: ' '.join([item.lower() for item in x.split()]))
 
 
